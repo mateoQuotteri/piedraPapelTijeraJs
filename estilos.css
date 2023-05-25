@@ -45,8 +45,40 @@ body {
   .card:hover img {
     filter: brightness(80%);
   }
+  
+  
   */ 
+.result{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+    }
 
   .none{
 display: none;
   }
+
+.result i{
+  text-align: center;
+  margin-bottom: .5em;
+    }
+
+    .lose{
+      color: red;
+      font-weight: bold;
+
+        }
+
+        .win{
+          color: green;
+          font-weight: bold;
+            }
+.result p
+{
+text-align: center;
+    }
+.draw {
+  color: orange;
+          font-weight: bold;
+}
