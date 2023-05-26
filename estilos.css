@@ -48,37 +48,26 @@ body {
   
   
   */ 
-.result{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
     }
-
-  .none{
-display: none;
-  }
-
-.result i{
-  text-align: center;
-  margin-bottom: .5em;
+    
+    .result img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
     }
-
-    .lose{
-      color: red;
+    
+    .result p {
+      text-align: center;
+      font-size: 18px;
       font-weight: bold;
-
-        }
-
-        .win{
-          color: green;
-          font-weight: bold;
-            }
-.result p
-{
-text-align: center;
+      margin: 0;
     }
-.draw {
-  color: orange;
-          font-weight: bold;
-}
+    
