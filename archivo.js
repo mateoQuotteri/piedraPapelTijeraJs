@@ -64,3 +64,61 @@ console.log(img);
 
 
 
+
+
+  piedraButton.addEventListener("click", function(){
+    const numero = Math.random()
+let resultado;
+console.log(img);
+    if(numero >= 0.66){
+        resultado = "Tijera"
+    }else if(numero < 0.66 && numero >= 0.33 ){
+        resultado = "Piedra"
+    }else{
+        resultado = "Papel"
+    }
+
+    if(resultado === "Papel"){
+      resultBox.classList.remove("none")
+      p.classList.add("lose")
+      p.classList.remove("win")
+      p.classList.remove("draw")
+      img.classList.remove("none")
+    
+     // icon.classList.add("fa-solid fa-thumbs-down")
+     img.src = "./perdiste.jpg"
+      p.innerHTML = "Has perdido, la maquina jugo Papel y tu has jugado Piedra."
+      console.log("perdiste");
+  }
+  
+  else if(resultado === "Piedra"){
+      resultBox.classList.remove("none")
+      p.classList.add("draw")
+      p.classList.remove("win")
+      p.classList.remove("lose")
+      
+    //  icon.classList.add("fa-solid fa-handshake")
+    img.classList.remove("none")
+    img.src = "./draw.jpeg"
+      p.innerHTML = "Has empatado, la maquina jugo Piedra y tu has jugado Piedra."
+
+      console.log("empataste");
+
+  }else{
+      resultBox.classList.remove("none")
+      p.classList.add("win")
+      p.classList.remove("lose")
+      p.classList.remove("draw")
+      img.classList.remove("none")
+
+    //  icon.classList.add("fa-sharp fa-solid fa-thumbs-up")
+    img.src = "./win.jpg"
+      p.innerHTML = "Has ganado, la maquina jugo Tijera y tu has jugado Piedra."
+
+      console.log("ganaste");
+
+  }
+  })
+
+
+
