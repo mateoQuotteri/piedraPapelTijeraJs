@@ -77,3 +77,17 @@ body {
     .none{
       display: none;
     }
+
+    .win{
+      color: green;
+      font-weight: bold;
+    }
+
+    .draw{
+      color: orange;
+      font-weight: bold;
+    }
+    .lose{
+      color: red;
+      font-weight: bold;
+    }
