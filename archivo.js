@@ -25,6 +25,7 @@ console.log(img);
       p.classList.add("lose")
       p.classList.remove("win")
       p.classList.remove("draw")
+      img.classList.remove("none")
     
      // icon.classList.add("fa-solid fa-thumbs-down")
      img.src = "./perdiste.jpg"
@@ -39,7 +40,8 @@ console.log(img);
       p.classList.remove("lose")
       
     //  icon.classList.add("fa-solid fa-handshake")
-      
+    img.classList.remove("none")
+    img.src = "./draw.jpeg"
       p.innerHTML = "Has empatado, la maquina jugo Tijera y tu has jugado Tijera."
 
       console.log("empataste");
@@ -49,9 +51,10 @@ console.log(img);
       p.classList.add("win")
       p.classList.remove("lose")
       p.classList.remove("draw")
+      img.classList.remove("none")
 
     //  icon.classList.add("fa-sharp fa-solid fa-thumbs-up")
-      
+    img.src = "./win.jpg"
       p.innerHTML = "Has ganado, la maquina jugo Papel y tu has jugado Tijera."
 
       console.log("ganaste");
